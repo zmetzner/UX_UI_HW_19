@@ -1,0 +1,383 @@
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* background-color: lightgray; */
+    background-color: #0D0F30;
+}
+
+/* Navigation Elements */
+
+header.navigation{
+    text-align: center;
+}
+
+.inline-block{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 24px;
+}
+
+.logo{
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+
+nav{
+    width: 73%;
+    padding: 1%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    color: #FFFFFF;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.inline-block:hover{
+    color: #FA9867;
+    transition: 0.5s;
+}
+
+nav a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+/* Intro image and discription */
+
+h2.hello{
+    font-size: 64px;
+    color: #FFFFFF;
+    font-weight: 100;
+}
+
+h3.intro-description{
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: 100;
+}
+
+.intro-picture{
+
+    /* Could not get the border to work around an image with rounded corners */
+
+    max-width: 50%;
+    /* width: 600px; */
+    border: 5px solid transparent;
+    border-image: linear-gradient(90deg,  #FA9867, #B024C0);
+    border-image-slice: 1;
+    /* border-radius: 100px; */
+    
+}
+
+.intro-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.intro-content{
+    display: flex;
+    align-items: center;
+}
+
+.intro-picture-container{
+    flex: 1;
+    max-width: 50%;
+    
+}
+
+.intro-text-container{
+    flex: 1;
+    margin-left: -15%
+}
+
+hr.intro-line{
+    position: relative;
+    height: 7px;
+    background: linear-gradient(to right, #FA9867, #B024C0);
+}
+
+
+/* My Work section */
+
+h1.my-work{
+    font-size: 96px;
+    font-family: 'Mako', serif;
+    color: #FFFFFF;
+    margin-bottom: 0%;
+    padding: 1%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-rows: repeat(3, 11fr);
+}
+
+/* Local Social */
+
+.local-social{
+    background-color: #93CCFF;
+    border-radius: 10px;
+    padding: 3%;
+    display: flex;
+    margin-bottom: 5%;
+    cursor: pointer;
+
+}
+
+
+
+.local-social-text{
+    background-color: #DFF0FF;
+    border-radius: 10px;
+    padding: 2%;
+    margin-right: 5%;
+    max-width: 33%;
+}
+
+h3.local-social-title{
+    font-size: 40px;
+    color: #B024C0;
+    margin-bottom: -2%;
+}
+
+h5.local-social-subtitle{
+    font-size: 24px;
+}
+
+h5.local-social-description{
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.local-social-demo{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Department of Education */
+
+.doe{
+    background-color: #93CCFF;
+    border-radius: 10px;
+    padding: 3%;
+    display: flex;
+    margin-bottom: 5%;
+    cursor: pointer;
+
+}
+
+.doe-text{
+    background-color: #DFF0FF;
+    border-radius: 10px;
+    padding: 2%;
+    margin-left: 5%;
+    max-width: 33%;
+}
+
+h3.doe-title{
+    font-size: 40px;
+    color: #B024C0;
+    margin-bottom: -2%;
+}
+
+h5.doe-subtitle{
+    font-size: 24px;
+}
+
+h5.doe-description{
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.doe-demo{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Chicago Adventure Therapy */
+
+.cat{
+    background-color: #93CCFF;
+    border-radius: 10px;
+    padding: 3%;
+    display: flex;
+    margin-bottom: 5%;
+    cursor: pointer;
+
+}
+
+.cat-text{
+    background-color: #DFF0FF;
+    border-radius: 10px;
+    padding: 2%;
+    margin-right: 5%;
+    max-width: 33%;
+}
+
+h3.cat-title{
+    font-size: 40px;
+    color: #B024C0;
+    margin-bottom: -2%;
+}
+
+h5.cat-subtitle{
+    font-size: 24px;
+}
+
+h5.cat-description{
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.cat-demo{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+/* Footer Elements */
+
+
+footer {
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reach-out {
+    text-align: left;
+    font-size: 36px;
+}
+
+.reach-out h3{
+    margin-top: -7%;
+    color: #FF9867
+}
+.reach-out h3 span{
+    color: #FFFFFF;
+}
+
+.contact-details {
+    flex: 1;
+    text-align: right;
+    font-size: 24px;
+}
+
+.contact {
+    font-style: italic;
+}
+
+.phone-number, .email, .linkedin {
+    margin: 5px 0;
+}
+
+.via-email, .via-linkedin {
+    font-style: italic;
+}
+
+footer .logo-container{
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    align-items: center;
+}
+
+footer .logo{
+    margin-bottom: -20%;
+} 
+  .glow {
+    position: relative;
+  }
+    
+  .glow:hover .glow2 {
+    filter: blur(25px);
+    position: absolute;
+    top: -1%;
+    left: -0.1%;
+    width: calc(100% + 10px); 
+    height: calc(100% + 10px); 
+    background: linear-gradient(90deg, #FF8038 0%, #FF0099 30.43%, #00EBEB 68.23%, #DB00FF 100%);
+    background-size: 600% 600%;
+    border-radius: 10px;
+    animation: AnimateBorder 5s ease infinite;
+    z-index: -1;
+    /* transform: translate(-2px, -2px); */
+    transition: filter 0.1s ease-in;
+  }
+  
+
+  
+  @keyframes AnimateBorder {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  
+  
+@media only screen and (max-width: 600px){
+
+    h2.hello {
+        font-size: 24px;
+    }
+
+    h3.intro-description {
+        font-size: 24px;
+    }
+
+    h1.my-work {
+        font-size: 48px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    
+    }
+
+
+    .local-social-text, .doe-text, .cat-text {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    h3.local-social-title, h3.doe-title, h3.cat-title {
+        font-size: 32px; 
+    }
+
+    h5.local-social-subtitle, h5.doe-subtitle, h5.cat-subtitle, h5.local-social-description, h5.doe-description, h5.cat-description {
+        font-size: 18px; 
+    }
+
+    .local-social-demo, .doe-demo, .cat-demo {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .contact-details, .reach-out {
+        font-size: 16px;
+    }
+
+}
+
+
