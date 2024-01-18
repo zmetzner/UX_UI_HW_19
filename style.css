@@ -13,10 +13,32 @@ header.navigation{
     text-align: center;
 }
 
+#contact-tab{
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+/* Contact glow effect */
+#contact-tab::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #FF8038 0%, #FF0099 30.43%, #00EBEB 68.23%, #DB00FF 100%);
+    width: calc(100% + 10px);
+    background-size: 600% 600%;
+    filter: blur(10px); 
+    animation: AnimateBorder 5s ease infinite; 
+    z-index: -1;
+}
+
 .inline-block{
     display: inline-block;
     vertical-align: top;
     font-size: 24px;
+    z-index: 1 !important;
 }
 
 .logo{
@@ -50,6 +72,7 @@ nav a{
     color: #FFFFFF;
     text-decoration: none;
 }
+
 
 
 /* Intro image and discription */
@@ -213,7 +236,7 @@ h5.doe-description{
     border-radius: 10px;
     padding: 3%;
     display: flex;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     cursor: pointer;
 
 }
@@ -272,8 +295,20 @@ footer {
     margin-top: -7%;
     color: #FF9867
 }
+
 .reach-out h3 span{
     color: #FFFFFF;
+}
+
+#to-top p{
+font-size: 24px;
+text-align: left;
+}
+
+#to-top p span:hover{
+    color: #FF9867;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .contact-details {
@@ -320,7 +355,6 @@ footer .logo{
     border-radius: 10px;
     animation: AnimateBorder 5s ease infinite;
     z-index: -1;
-    /* transform: translate(-2px, -2px); */
     transition: filter 0.1s ease-in;
   }
   
